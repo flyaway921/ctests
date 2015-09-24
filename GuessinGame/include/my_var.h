@@ -1,0 +1,2 @@
+char* BIRTHDAY="1991-09-21";
+char* PHONE="18768122216";
