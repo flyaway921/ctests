@@ -1,6 +1,9 @@
 /*this is test
 */
 #include <stdio.h>
+//if without include my_var.h BIRTHDAY and PHONE will be undelceared variable
+//but why the get_random_int() function can be triggered ?
+//Is there any different between function and variable?
 #include "my_var.h"
 #define MAX 100
 
