@@ -1,10 +1,16 @@
 #generate guess excutable program
 gcc main.c function.c -o guess -I../include
 #generate guess.o and function.o
-gcc -c mian.c function.c -I../include
+gcc -c main.c function.c -I../include
 #generate guess excutbale program with object files
 #there is no need to include the xx.h when it has already been compiled
 #this means link do not need any more denpency
 gcc -o guess main.o function.o
 
-
+#generate libfunction.a
+#first generate function.o
+gcc -c function.c -I../include
+#second generate libfunction.a
+ar rc libfunction.a function.o
+#generate executable program with static lib
+gcc -o guess main.c -I../include -L ../lib -lfunction
