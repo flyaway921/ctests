@@ -1,2 +1,3 @@
 char* BIRTHDAY="1991-09-21";
-char* PHONE="18768122216";
+char* PHONE="1588253034";
+#define MAX_RANGE 100

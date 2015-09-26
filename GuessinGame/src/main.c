@@ -5,18 +5,12 @@
 #include <stdio.h>
 #include <stdlib.h> //because use srand
 #include <time.h>
-#define MAX 100
-
-void scan_number(int* num)
-{
-	scanf("%d", num);
-	
-}
+#include "my_var.h"
 
 int main()
 {
-	int num = get_random_int(MAX);
-	printf("guess a number between 0 and %d\n",MAX);
+	int num = get_random_int(MAX_RANGE);
+	printf("guess a number between 0 and %d\n",MAX_RANGE);
 	int my_number;
 	printf("your number:");
 	//scanf("%d", &my_number);
