@@ -8,6 +8,8 @@ DEPS = function.h
 guess: main.c test.c function.c
 	$(CC) -o $(TARGET) main.c function.c $(CFLAGS)
 	$(CC) -o test test.c function.c $(CFLAGS)
+	mv $(TARGET) ../bin
+	mv test ../bin
 
 #test: test.c function.c
 #	$(CC) -o test test.c function.c $(CFLAGS)

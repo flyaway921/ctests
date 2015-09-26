@@ -13,4 +13,10 @@ gcc -c function.c -I../include
 #second generate libfunction.a
 ar rc libfunction.a function.o
 #generate executable program with static lib
-gcc -o guess main.c -I../include -L ../lib -lfunction
+gcc -o guess main.c -I../include -L../lib -lfunction
+
+#generate a dynamica lib
+gcc -o libfunction.so -shared -fPIC function.c
+gcc -o guess main.c -I../include -L../lib -lfunction
+export LD_LIBRART_PATH=../lib
+run guess
