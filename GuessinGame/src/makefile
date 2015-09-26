@@ -10,6 +10,7 @@ guess: main.c test.c
 	$(CC) -o test test.c $(CFLAGS)
 	mv $(TARGET) ../bin
 	mv test ../bin
+	export LD_LIBRARy_PATH=../lib
 
 #test: test.c function.c
 #	$(CC) -o test test.c function.c $(CFLAGS)
