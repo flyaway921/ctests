@@ -15,3 +15,4 @@ clean:
 	#This is a big problem!
 	$(TEST) -f guess && rm guess
 	$(TEST) -f test && rm test
+	$(TEST) -f a.out && rm a.out
